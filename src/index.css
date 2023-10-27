@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  @apply bg-gray-900;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+.showcase {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.bg-image {
+  height: 300px;
+}
+
+.list:last-child {
+  border-bottom: none;
+}
+
+.list .cross {
+  opacity: 0;
+}
+
+.list:hover .cross {
+  opacity: 1;
+}
+
+@media (min-width: 1440px) {
+  .bg-image {
+    width: 1600px;
+  }
+}
